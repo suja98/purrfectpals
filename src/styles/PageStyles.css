@@ -44,7 +44,7 @@
   width: fit-content;
   padding: 0.1rem;
   margin-bottom: 1rem;
-  border-bottom: solid 3px var(--main);
+  border-bottom: solid 3px var(--light);
   display: flex;
 }
 
