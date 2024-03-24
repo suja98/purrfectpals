@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+header {
+  align-items: center;
+  background-color: var(--main);
+  box-shadow: var(--hover) 0px 1px 2px 0px;
+  color: var(--main-text);
+  display: flex;
+  height: 60px;
+  justify-content: space-around;
+  padding: 0 2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  border: solid 1px var(--border);
+}
+
+nav li {
+  color: var(--main-text);
+  font-weight: 600;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.dropbtn {
+  background-color: var(--main);
+  border: none;
+  color: var(--main-text);
+  cursor: context-menu;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  z-index: 0;
+}
+
+.dropbtn::after {
+  background: var(--main-text);
+  content: "";
+  display: block;
+  transition: width 0.3s;
+  width: 0;
+  height: 3px;
+}
+
+.dropbtn:hover::after,
+.dropdown:hover .dropbtn::after {
+  border-bottom: solid 3px var(--main-text);
+  width: 100%;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdownContent {
+  background-color: var(--main);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: none;
+  padding: 1rem 0 0.5rem;
+  position: absolute;
+  width: 250px;
+  z-index: 1000;
+}
+
+.dropdownContent li {
+  color: var(--main-text);
+  display: block;
+  font-size: 16px;
+  padding: 12px 0 0 12px;
+  text-decoration: none;
+  transition: ease 0.5s;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.dropdownContent li:hover {
+  padding-left: 17px;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+header .nav-btn {
+  background: transparent;
+  border: none;
+  color: var(--main-text);
+  cursor: pointer;
+  display: none;
+  font-size: 1.8rem;
+  opacity: 0;
+  outline: none;
+  padding: 5px;
+}
+
+header div,
+nav {
+  align-items: center;
+  display: flex;
+  z-index: 100;
+}
+
+.highlightBtnContainer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.highlightBtn {
+  background-color: var(--main-text);
+  border: solid 2px var(--main-text);
+  border-radius: 10px;
+  color: var(--white-text);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.highlightBtn:hover {
+  transform: translateY(-3px);
+}
+
+.highlightBtn svg {
+  font-size: 20px;
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    justify-content: space-between;
+  }
+
+  header .nav-btn {
+    display: block;
+    opacity: 1;
+    z-index: 1000;
+  }
+  .darkTheme {
+    margin-left: auto;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    right: -50%;
+    height: 100%;
+    width: 50%;
+    background-color: var(--main);
+    display: block;
+    transition: right 1s;
+    padding-left: 20px;
+    padding-top: 100px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  header .responsive_nav {
+    right: 0;
+    z-index: 11;
+  }
+
+  .dropdown {
+    display: block;
+  }
+
+  .dropbtn,
+  .toggleTheme {
+    cursor: context-menu;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    text-align: left;
+    transition: background-color 0.2s linear;
+    width: 100%;
+  }
+
+  .toggleTheme {
+    display: flex;
+  }
+
+  .dropbtn:after {
+    float: right;
+    height: 0;
+  }
+
+  .dropdownContent {
+    box-shadow: none;
+    overflow: hidden;
+    padding: 0 20px;
+    position: unset;
+    width: 100%;
+  }
+
+  .dropbtn:hover::after,
+  .dropdown:hover .dropbtn::after {
+    border-bottom: none;
+  }
+
+  .dropbtn:hover + .dropdownContent {
+    display: block;
+  }
+
+  .highlightBtnContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    left: 20px;
+    padding-top: 50px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: fit-content;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  header nav {
+    width: 100%;
+    right: -100%;
+  }
+
+  header .responsive_nav {
+    right: 0;
+    z-index: 100;
+  }
+}

@@ -1,0 +1,284 @@
+.pageContainer {
+  top: 5rem;
+  width: 80%;
+  min-height: 100vh;
+  height: fit-content;
+  margin: 0 auto 6rem;
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: var(--white-text);
+  border: solid 1px var(--border);
+}
+
+.pageDescription {
+  max-width: 800px;
+  display: block;
+  margin: 0 auto 2rem;
+  text-align: justify;
+}
+
+.qa {
+  display: flex;
+  flex-direction: column;
+  color: var(--main-text);
+}
+
+.pageContainer h2 {
+  color: var(--main-text);
+  background-color: var(--main);
+  width: fit-content;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+.pageContainer h3,
+.stepContent h3 {
+  color: var(--main-text);
+  text-transform: uppercase;
+  font-weight: 600;
+  width: fit-content;
+  padding: 0.1rem;
+  margin-bottom: 1rem;
+  border-bottom: solid 3px var(--main);
+  display: flex;
+}
+
+.pageContainer h4 {
+  color: var(--main-text);
+  /* width: fit-content; */
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.questionContainer {
+  color: var(--main-text);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+  padding: 0 3rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.questionContainer svg:not(.chevron-of-h3) {
+  background-color: var(--main);
+  color: var(--main-text);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+
+.questionContainer span {
+  margin-right: auto;
+  padding: 1rem 0;
+}
+
+.questionContainer .chevron-of-h3 {
+  font-size: 16px;
+  background-color: transparent;
+  color: var(--main-text);
+}
+
+.answerContainer {
+  padding: 0 6rem;
+  font-size: 18px;
+}
+
+.allSteps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stepContainer {
+  display: flex;
+  gap: 10px;
+  flex: 0 1 calc(50% - 10px);
+  padding: 1rem;
+  border: solid 1px var(--border);
+  border-radius: 10px;
+  color: var(--main-text);
+}
+
+.stepIconContainer svg {
+  width: 50px;
+  height: 50px;
+}
+
+.stepContent {
+  text-align: justify;
+}
+
+.stepContent span {
+  display: block;
+  padding: 10px 10px 10px 20px;
+  line-height: 2;
+}
+
+.stepContent ul {
+  padding-left: 60px;
+}
+
+.stepContent ul li {
+  list-style-type: circle;
+}
+
+.adoptionFee {
+  display: block;
+  padding-left: 20px;
+}
+
+.adoptionFee span {
+  padding-left: 10px;
+}
+
+.pageContainer .form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pageContainer .p {
+  text-align: center;
+}
+
+.pageContainer textarea,
+.pageContainer select,
+.pageContainer input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--main-text);
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: var(--white-text);
+  color: var(--main-text);
+}
+
+.pageContainer .label,
+.pageContainer section > .pageContainer label {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  margin-bottom: 13px;
+  margin-top: 20px;
+  color: var(--white-text);
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.pageContainer textarea:focus,
+.pageContainer select:focus,
+.pageContainer input:focus,
+.pageContainer textarea:hover,
+.pageContainer select:hover,
+.pageContainer input:hover {
+  background-color: var(--white-text);
+}
+
+.pageContainer input[type="submit"],
+.pageContainer .button {
+  position: relative;
+  background: var(--main);
+  color: var(--main-text);
+  text-transform: uppercase;
+  border: solid 1px var(--light);
+  font-weight: 600;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  display: block;
+  appearance: none;
+  border-radius: 10px;
+  width: 100%;
+  letter-spacing: 0.5rem;
+  transition: 0.3s all;
+}
+
+.pageContainer input[type="submit"]:hover {
+  scale: 1.01;
+}
+
+.pageContainer .buttonBlack {
+  background: var(--main-text);
+  border: 1px solid var(--white-text);
+}
+
+.pageContainer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.pageContainer .counter {
+  font-weight: 400;
+}
+
+.nameInput,
+.contactInput,
+.dateInput {
+  display: flex;
+  gap: 20px;
+}
+
+.required {
+  color: var(--warning);
+  padding-left: 5px;
+}
+
+p.required {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.form form select,
+.form form textarea {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1000px) {
+  .stepContainer {
+    flex: 0 1 100%;
+    margin: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .pageContainer {
+    width: 98%;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  background-color: var(--dark-card);
+  color: var(--main-text);
+}
+
+button[type="submit"] {
+  background: var(--main);
+  color: var(--main-text);
+  text-transform: uppercase;
+  border: solid 1px var(--light);
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background-color: var(--button-hover);
+  color: var(--main-text);
+}
