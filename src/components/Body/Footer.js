@@ -18,7 +18,7 @@ function Footer() {
             <form className="footerForm" action="">
               <input
                 className="footerInput"
-                type="email"
+            
                 placeholder="Email Address"
               />
               <button className="footerButton">
