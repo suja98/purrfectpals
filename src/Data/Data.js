@@ -378,16 +378,6 @@ const Data = [
   },
   {
     img: [
-      "https://scontent.fsgn2-4.fna.fbcdn.net/v/t1.6435-9/73221790_1311864128974179_6355629434241810432_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7f8c78&_nc_eui2=AeE8tWDJ95DOFl6gNwyinGbjXiKamS0QgUxeIpqZLRCBTKwngm2y43P4sXOEoKodd9dzdFseigfhDlaP3egVMdah&_nc_ohc=hNbVYMF0pYQAX9H1Quj&_nc_ht=scontent.fsgn2-4.fna&oh=00_AfDMj_cXziJ1b9TKuTDGSgfV0BQKHRvaY02x0SEJ_XTlOg&oe=65F14F6C",
-      "https://2momart.vn/photos/2momart/21092023/con-cho-co.jpg",
-      "https://chomeocanh.com/wp-content/uploads/2023/04/cho-lai-song-ma.jpg",
-      "https://sieupet.com/sites/default/files/pictures/images/Ch%C3%B3-Hm%C3%B4ng-c%E1%BB%99c-%C4%91u%C3%B4i..jpg",
-      "https://cafefcdn.com/thumb_w/640/203337114487263232/2023/1/30/photo1675051912025-1675051912120273799303.jpg",
-      "https://cdn.tgdd.vn/Files/2021/04/23/1345722/tu-dai-quoc-khuyen-cua-viet-nam-la-nhung-loai-nao-202104231437164434.jpg",
-      "https://cdn.tgdd.vn/Files/2021/04/23/1345722/tu-dai-quoc-khuyen-cua-viet-nam-la-nhung-loai-nao-202201071632527740.jpg",
-    ],
-  {
-    img: [
       "https://thucanh.net/wp-content/uploads/2021/02/anh-cho-poodle164.jpg",
       "https://2momart.vn/photos/2momart/21092023/con-cho-co.jpg",
       "https://chomeocanh.com/wp-content/uploads/2023/04/cho-lai-song-ma.jpg",
